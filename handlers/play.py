@@ -56,7 +56,7 @@ async def play(_, message: Message):
                         break
 
         if offset in (None,):
-            await res.edit_text(f"**{Bn} :**❕ You did not give me anything to play.")
+            await res.edit_text(f"**{Bn} :**❕ WOI BANGKE LINK NYA MANA, LINK WOI LINK , BUKAN LINK BOKEP.")
             return
 
         url = text[offset:offset + length]
@@ -67,5 +67,9 @@ async def play(_, message: Message):
         position = queues.add(message.chat.id, file_path)
         await res.edit_text(f"**{Bn} :** #️⃣ Queued at position {position}.")
     else:
-        await res.edit_text(f"**{Bn} :** ▶️ Playing...")
+        await res.edit_text(f"**{Bn} :** ▶️ ANJAI GELENG-GELENG LAGI KITA.....")
+                            
+                            
+                            
+                          ...")
         callsmusic.pytgcalls.join_group_call(message.chat.id, file_path, 48000, callsmusic.pytgcalls.get_cache_peer())
